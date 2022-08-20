@@ -2,20 +2,27 @@ function receivesAFunction (spy) {
     return spy();
 }
 
+function returnsANamedFunction (){
+    return function named(){
+    
+    }
+}
 
-function returnsANamedFunction(){
-    var callback =function (){
-    return function name(){
-        return 'anonymous';
-    }
-    }
-  
-    return receivesAFunction(callback);
-    }
+console.log (returnsANamedFunction());
 
-    function returnsAnAnonymousFunction(){
-    return function (){
-        console.log('anonymous')
-    }
+
+    // function returnsAnAnonymousFunction(){
+    // return function (){
+    //     console.log('anonymous')
+    // }
   
+    // }
+
+
+    function returnsAnAnonymousFunction () {
+        return function () {
+
+        }
     }
+    console.log (returnsAnAnonymousFunction());
+    
